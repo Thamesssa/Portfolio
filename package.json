@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://thamesssa.github.io/Portfolio/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
@@ -15,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^6.2.1",
+    "gh-pages": "^1.9",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
